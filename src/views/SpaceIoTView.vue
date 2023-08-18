@@ -1,13 +1,18 @@
 <template>
     <div>
-
+        <UnderConstruction />
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import UnderConstruction from '../components/UnderConstruction.vue';
+
+export default {
+  name: 'SpaceIoT',
+  components: {
+    UnderConstruction,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

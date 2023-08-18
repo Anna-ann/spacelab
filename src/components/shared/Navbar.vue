@@ -11,13 +11,26 @@
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item" v-for="(item, index) in navItems" :key="index">
-            <router-link v-if="item.isRoute" :to="item.route" class="nav-link" :class="{ active: isCurrentRoute(item.route) }">
-              {{ item.text }}
-            </router-link>
-            <a v-else class="nav-link" :href="`#${item.id}`">
-              {{ item.text }}
-            </a>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/space3d">Space3D</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/spaceiot">SpaceIoT</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/spacecubs">SpaceCUBS</router-link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our team</a>
           </li>
         </ul>
       </div>
@@ -47,15 +60,6 @@ export default {
   data() {
     return {
       isDarkTheme: true,
-      navItems: [
-        { text: 'Home', route: '/' },
-        { text: 'About', id: 'about', isRoute: false },
-        { text: 'Space3D', route: '/space3d' },
-        { text: 'SpaceIoT', route: '/spaceiot' },
-        { text: 'SpaceCUBS', route: '/spacecubs' },
-        { text: 'Services', id: 'services', isRoute: false },
-        { text: 'Our Team', id: 'team', isRoute: false },
-      ],
     };
   },
   methods: {
@@ -67,11 +71,11 @@ export default {
       this.updateThemeClasses();
 
       const textColor = this.isDarkTheme ? '#ffffff' : '#212529';
-      
+
       document.documentElement.style.setProperty('--text-color', textColor);
       document.documentElement.style.setProperty('--bg-color', this.isDarkTheme ? '#212529' : '#ffffff');
       document.documentElement.style.setProperty('--card-bg-color', this.isDarkTheme ? '#212529' : '#ffffff');
-},
+    },
     updateThemeClasses() {
       document.body.classList.toggle('dark-theme', this.isDarkTheme);
       document.body.classList.toggle('light-theme', !this.isDarkTheme);

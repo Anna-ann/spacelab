@@ -4,7 +4,7 @@
         <div class="row gy-4 justify-content-center align-items-center">
           <div class="col-lg-6 col-md-12 footer-info d-flex flex-column align-items-center">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="src/assets/logo.svg" width="120" height="55">
+              <img src="/src/assets/logo.svg" width="120" height="55">
             </a>
             <div class="social-links d-flex justify-content-center mt-4">
               <a href="https://wa.me/77016078789" class="whatsapp"><i class="bi bi-whatsapp"></i></a>

@@ -7,7 +7,7 @@
           <p>We produce 3D printers, IoVIT modems and satellites</p>
         </div>
         <div class="col-lg-8">
-          <img src="src/assets/hero-bg.png" alt="Hero Image" class="img-fluid">
+          <img src="/src/assets/hero-bg.png" alt="Hero Image" class="img-fluid">
         </div>
       </div>
 
@@ -53,6 +53,9 @@ export default {
   },
   data() {
     return {
+      bgColor: '#212529',       
+      textColor: '#ffffff',     
+      cardBgColor: '#212529', 
       cards: [
         {
           title: 'Space3D',

@@ -28,7 +28,7 @@
   
           <div class="col-lg-6">
             <div class="position-relative">
-              <img src="src/assets/about.jpg" class="img-fluid" alt="">
+              <img src="/src/assets/about.jpg" class="img-fluid" alt="">
               <div class="play-btn-container" v-if="!showVideo">
                 <button type="button" class="play-btn" @click="playVideo">
                   <i class="bi bi-play"></i>

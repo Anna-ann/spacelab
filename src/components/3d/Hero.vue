@@ -20,7 +20,7 @@
               
     
             <div class="col-lg-8 order-1 order-lg-2 hero-img">
-              <img src="src/assets/3d/hero-img.png" class="img-fluid mb-3 mb-lg-0" alt="">
+              <img src="/src/assets/3d/hero-img.png" class="img-fluid mb-3 mb-lg-0" alt="">
             </div>
     
           </div>

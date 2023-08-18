@@ -1,0 +1,118 @@
+a {
+  font-weight: 500;
+  color: #FF6B00;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #fff;
+}
+
+i {
+  color: #FF6B00;
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  background-color: #212529;
+}
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1.1;
+  color: #FF6B00;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 3.5em; 
+  font-weight: 600;
+  padding-top: 20%;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: 500;
+  line-height: 1.4; 
+}
+
+h4 {
+  font-size: 1em;  
+}
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.6; 
+}
+
+h6 {
+  font-size: 0.67em;
+  line-height: 1.7; 
+}
+
+p {
+  font-size: 1em;
+}
+
+#app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 5% 0;
+}
+
+.btn-primary {
+  border: 2px solid #FF6B00;
+  background-color: #FF6B00;
+  color: #fff;
+  border-radius: 3%;
+}
+
+.btn-primary:hover {
+  background-color: #212529;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 3%;
+}
+
+.dark-theme {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #212529;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #FF6B00;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #212529;
+  }
+  a:hover {
+    color: #FF6B00;
+  }
+}
+

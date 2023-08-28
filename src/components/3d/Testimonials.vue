@@ -31,7 +31,7 @@
           // Add more testimonials
         ],
         logos: [
-          "src/assets/company-logos/logo1.png",
+          "src/assets/3d/companies/NU.png",
           "src/assets/company-logos/logo2.png",
           "src/assets/company-logos/logo3.png",
           // Add more logos
@@ -62,7 +62,6 @@
   
   .logo-image {
     max-width: 100px;
-    max-height: 50px;
     margin: 0 auto;
   }
   </style>

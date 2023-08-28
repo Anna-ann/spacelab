@@ -26,12 +26,12 @@ export default {
   data() {
     return {
       itemList: [
-        { title: "Образование", image: "src/assets/application/1.png" },
-        { title: "Медицина", image: "src/assets/application/2.png" },
-        { title: "Промышленность", image: "src/assets/application/3.png" },
-        { title: "Космонавтика", image: "src/assets/application/4.png" },
-        { title: "Производство игрушек", image: "src/assets/application/5.png" },
-        { title: "Разработка прототипов", image: "src/assets/application/6.png" },
+        { title: "Education", image: "src/assets/application/1.png" },
+        { title: "Medicine", image: "src/assets/application/2.png" },
+        { title: "Industry", image: "src/assets/application/3.png" },
+        { title: "Aerospace", image: "src/assets/application/4.png" },
+        { title: "Toys Manufacturing", image: "src/assets/application/5.png" },
+        { title: "Protorype Development", image: "src/assets/application/6.png" },
       ],
       currentImage: "src/assets/application/1.png", 
     };

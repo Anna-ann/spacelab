@@ -26,12 +26,6 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/spacecubs">SpaceCUBS</router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Our team</a>
-          </li>
         </ul>
       </div>
 
@@ -87,7 +81,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.navbar {
+  max-width: none;
+}
 .navbar-icons {
   display: flex;
   align-items: center;

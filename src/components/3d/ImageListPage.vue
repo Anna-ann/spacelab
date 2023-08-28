@@ -18,14 +18,14 @@
     data() {
       return {
         itemList: [
-          { title: "Образование", image: "src/assets/education.jpg" },
-          { title: "Медицина", image: "src/assets/medicine.jpg" },
-          { title: "Промышленность", image: "src/assets/industry.jpg" },
-          { title: "Космонавтика", image: "src/assets/space.jpg" },
-          { title: "Производство игрушек", image: "src/assets/toys.jpg" },
-          { title: "Разработка прототипов", image: "src/assets/prototypes.jpg" },
+          { title: "Education", image: "src/assets/education.jpg" },
+          { title: "Medicine", image: "src/assets/medicine.jpg" },
+          { title: "Industry", image: "src/assets/industry.jpg" },
+          { title: "Aerospace", image: "src/assets/space.jpg" },
+          { title: "Toy Manufacturing", image: "src/assets/toys.jpg" },
+          { title: "Prototype Development", image: "src/assets/prototypes.jpg" },
         ],
-        currentImage: "src/assets/education.jpg", // Default image
+        currentImage: "src/assets/education.jpg",
       };
     },
     methods: {

@@ -56,7 +56,7 @@
           { title: 'Experience', text: 'We have been successfully providing our services for more than 3 years', icon: 'bi bi-clipboard-data-fill' },
         ],
         showVideo: false,
-        videoUrl: 'https://www.youtube.com/embed/835j3FPNkdw?autoplay=1',
+        videoUrl: '/src/assets/aboutus.mp4',
         playButtonClicked: false,
       };
     },

@@ -47,7 +47,7 @@
     },
     methods: {
       getImageUrl(index) {
-        return `src/assets/3d/${index}.png`;
+        return `/src/assets/3d/${index}.png`;
       },
     },
   };

@@ -1,7 +1,7 @@
 <template>
   <section id="product" class="product">
     <div class="container-fluid">
-      <h1>Our Printers</h1>
+      <h1>{{$t('productCharacteristics.title')}}</h1>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -20,28 +20,170 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item" v-for="(item, index) in carouselItems" :key="index" :class="{ active: index === 0 }">
+          <div class="carousel-item active">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-5">
                 <div class="carousel-caption">
-                  <h3>{{ item.title }}</h3>
+                  <h3>SL300</h3>
                 </div>
                 <div class="slide-image-container">
-                  <img :src="item.imageSrc" class="d-block w-100" :alt="item.altText">
+                  <img src="/src/assets/3d/SL300.png" class="img-fluid d-block w-100" alt="Slide 1 Image">
                 </div>
               </div>
-              <div class="col-lg-6">
+              
+              <div class="col-lg-7">
                 <div class="product-characteristics">
                   <div class="row">
-                    <div class="col-sm-6" v-for="(characteristic, idx) in item.characteristics" :key="idx">
+                    <div class="col-sm-6">
                       <div class="characteristic">
-                        <img :src="characteristic.iconSrc" class="icon" :alt="characteristic.iconAlt">
                         <div class="characteristic-content">
-                          <p>{{ characteristic.content }}</p>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/1.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.workingArea')}}300х300х300 мм</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/2.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.nozzle')}}0.1 – 0.8 мм</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/3.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.printSpeed')}}</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="btn">
+                    <div class="col-sm-6">
+                      <div class="characteristic">
+                        <div class="characteristic-content">
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/4.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.travelSpeed')}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/5.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.printMedia')}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/6.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.accuracy')}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <a href="#contact">
+                        <button class="btn btn-primary btn-buy">Buy Now</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="carousel-caption">
+                  <h3>SL500</h3>
+                </div>
+                <div class="slide-image-container">
+                  <img src="/src/assets/3d/SL500.png" class="img-fluid d-block w-100" alt="Slide 1 Image">
+                </div>
+              </div>
+              
+              <div class="col-lg-7">
+                <div class="product-characteristics">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="characteristic">
+                        <div class="characteristic-content">
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/1.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.workingArea')}}300х300х300 мм</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/2.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.nozzle')}}0.1 – 0.8 мм</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/3.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.printSpeed')}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="characteristic">
+                        <div class="characteristic-content">
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/4.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.travelSpeed')}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/5.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.printMedia')}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <img src="/src/assets/3d/product/6.png" class="icon" alt="Icon">
+                            </div>
+                            <div class="col-9">
+                              <p>{{$t('productCharacteristics.accuracy')}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
                       <a href="#contact">
                         <button class="btn btn-primary btn-buy">Buy Now</button>
                       </a>
@@ -67,92 +209,20 @@
 
 <script>
 export default {
-  name: 'Products',
-  data() {
-    return {
-      carouselItems: [
-        {
-          imageSrc: '/src/assets/3d/SL300.png',
-          altText: 'Slide Image',
-          title: 'SL300',
-          characteristics: [
-            {
-              iconSrc: '/src/assets/3d/product/1.png',
-              iconAlt: 'Icon',
-              content: 'Working area: 300x300x300 mm',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/2.png',
-              iconAlt: 'Icon',
-              content: 'Nozzle: 0.1 - 0.8 mm',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/3.png',
-              iconAlt: 'Icon',
-              content: 'Print speed: up to 100 mm/s',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/4.png',
-              iconAlt: 'Icon',
-              content: 'Travel speed: 200 mm/s',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/5.png',
-              iconAlt: 'Icon',
-              content: 'Print media: PETG, PLA, and other materials up to 280°C',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/6.png',
-              iconAlt: 'Icon',
-              content: 'Accuracy up to 50 microns',
-            },
-          ],
-        },
-        {
-          imageSrc: '/src/assets/3d/SL500.png',
-          altText: 'Slide Image',
-          title: 'SL500',
-          characteristics: [
-            {
-              iconSrc: '/src/assets/3d/product/1.png',
-              iconAlt: 'Icon',
-              content: 'Working area: 500x500x500 mm',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/2.png',
-              iconAlt: 'Icon',
-              content: 'Nozzle: 0.1 - 0.8 mm',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/3.png',
-              iconAlt: 'Icon',
-              content: 'Print speed: up to 100 mm/s',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/4.png',
-              iconAlt: 'Icon',
-              content: 'Travel speed: 200 mm/s',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/5.png',
-              iconAlt: 'Icon',
-              content: 'Print media: PETG, PLA, and other materials up to 280°C',
-            },
-            {
-              iconSrc: '/src/assets/3d/product/6.png',
-              iconAlt: 'Icon',
-              content: 'Accuracy up to 50 microns',
-            },
-          ],
-        },
-      ],
-    };
-  },
-};
+  name: 'Products'
+  }
 </script>
 
 <style scoped>
+#carouselExampleIndicators {
+  max-width: none; 
+}
+
 .icon {
-  width: 40%;
+  width: 100%;
+}
+
+.characteristic-content .row {
+  margin: 10px 0; 
 }
 </style>

@@ -1,21 +1,19 @@
 <template>
   <section class="application">
-    <h1>Application</h1>
+    <h1>{{ $t('applicationSection.heading') }}</h1>
     <div class="image-list-page">
       <div class="image-list">
         <ul>
-          <li
-            v-for="(item, index) in itemList"
-            :key="index"
-            @mouseover="changeImage(index)"
-            class="list-item"
-          >
-            {{ item.title }}
-          </li>
+          <li @mouseover="changeImage(0)" class="list-item">{{ $t('applicationSection.education') }}</li>
+          <li @mouseover="changeImage(1)" class="list-item">{{ $t('applicationSection.medicine') }}</li>
+          <li @mouseover="changeImage(2)" class="list-item">{{ $t('applicationSection.industry') }}</li>
+          <li @mouseover="changeImage(3)" class="list-item">{{ $t('applicationSection.aerospace') }}</li>
+          <li @mouseover="changeImage(4)" class="list-item">{{ $t('applicationSection.toysManufacturing') }}</li>
+          <li @mouseover="changeImage(5)" class="list-item">{{ $t('applicationSection.prototypeDevelopment') }}</li>
         </ul>
       </div>
       <div class="image-display">
-        <img :src="currentImage" alt="Displayed Image" />
+        <img :src="currentImage" :alt="$t('applicationSection.displayedImage')" />
       </div>
     </div>
   </section>
@@ -25,24 +23,25 @@
 export default {
   data() {
     return {
-      itemList: [
-        { title: "Education", image: "src/assets/application/1.png" },
-        { title: "Medicine", image: "src/assets/application/2.png" },
-        { title: "Industry", image: "src/assets/application/3.png" },
-        { title: "Aerospace", image: "src/assets/application/4.png" },
-        { title: "Toys Manufacturing", image: "src/assets/application/5.png" },
-        { title: "Protorype Development", image: "src/assets/application/6.png" },
-      ],
-      currentImage: "src/assets/application/1.png", 
+      currentImage: "/src/assets/application/1.png",
     };
   },
   methods: {
     changeImage(index) {
-      this.currentImage = this.itemList[index].image;
+      const images = [
+        "/src/assets/application/1.png",
+        "/src/assets/application/2.png",
+        "/src/assets/application/3.png",
+        "/src/assets/application/4.png",
+        "/src/assets/application/5.png",
+        "/src/assets/application/6.png",
+      ];
+      this.currentImage = images[index];
     },
   },
 };
 </script>
+
 
 <style scoped>
 .image-list-page {
@@ -53,6 +52,7 @@ export default {
 }
 
 .image-list {
+  text-align: center;
   width: 30%;
   justify-content: flex-start;
 }

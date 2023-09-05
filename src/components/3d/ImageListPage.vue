@@ -18,14 +18,14 @@
     data() {
       return {
         itemList: [
-          { title: "Education", image: "src/assets/education.jpg" },
-          { title: "Medicine", image: "src/assets/medicine.jpg" },
-          { title: "Industry", image: "src/assets/industry.jpg" },
-          { title: "Aerospace", image: "src/assets/space.jpg" },
-          { title: "Toy Manufacturing", image: "src/assets/toys.jpg" },
-          { title: "Prototype Development", image: "src/assets/prototypes.jpg" },
+          { title: "Education", image: "/src/assets/education.jpg" },
+          { title: "Medicine", image: "/src/assets/medicine.jpg" },
+          { title: "Industry", image: "/src/assets/industry.jpg" },
+          { title: "Aerospace", image: "/src/assets/space.jpg" },
+          { title: "Toy Manufacturing", image: "/src/assets/toys.jpg" },
+          { title: "Prototype Development", image: "/src/assets/prototypes.jpg" },
         ],
-        currentImage: "src/assets/education.jpg",
+        currentImage: "/src/assets/education.jpg",
       };
     },
     methods: {
@@ -37,7 +37,6 @@
   </script>
   
   <style scoped>
-  /* Add your styles here */
   .image-list-page {
     display: flex;
   }

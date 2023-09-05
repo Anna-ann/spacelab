@@ -1,38 +1,73 @@
 <template>
-  <section class="problem-solutions">
+  <section class="problems-solutions">
     <div class="container">
-      <h1>Problems and Solutions</h1>
-      <ThreeColumnSection :problems="problems" :solutions="solutions" :imageSrc="imageSrc" />
+      <h1>{{$t('problemsSection.title')}}</h1>
+      <div class="row">
+        <div class="column">
+          <div class="problem-list">
+            <ul>
+              <li>{{$t('problemsSection.problems.0')}}</li>
+              <li>{{$t('problemsSection.problems.1')}}</li>
+              <li>{{$t('problemsSection.problems.2')}}</li>
+            </ul>
+          </div>
+        </div>
+        <img src="/src/assets/problems.png" alt="Problems and Solutions Image" class="image" />
+        <div class="column">
+          <div class="solution-list">
+            <ul>
+              <li>{{$t('problemsSection.solutions.0')}}</li>
+              <li>{{$t('problemsSection.solutions.1')}}</li>
+              <li>{{$t('problemsSection.solutions.2')}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import ThreeColumnSection from './ThreeColumnSection.vue';
-
 export default {
   name: 'Problems',
-  components: { ThreeColumnSection },
-  data() {
-    return {
-      problems: [
-        'Production halted due to broken part and lack of technical support',
-        'Limited network coverage, high costs, and data unavailability across wide distances',
-        'Data unavailability across wide distances, lack of info for remote military & civil operations, and the need for constant monitoring of resources',
-      ],
-      solutions: [
-        'In-house industrial 3D printers with rapid replacement and technical support',
-        'Expanded network coverage, affordable pricing with high quality, and a comprehensive Satellite IoT service featuring regional sensors and data processing algorithms',
-        'Cloud data availability with API for data processing and the launch of CIS Insurance company for risk reassurance',
-      ],
-      imageSrc: 'src/assets/problems.png', 
-    };
-  },
 };
 </script>
 
 <style scoped>
-.problem-solutions {
-  padding: 4rem 0;
-}
+  .problems-solutions {
+    padding: 2rem 0;
+    text-align: justify;
+  }
+
+  .problems-solutions .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .problems-solutions .row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .problems-solutions .column {
+    flex: 1; 
+  }
+
+  .problem-list ul,
+  .solution-list ul {
+    list-style: none;
+    padding: 10% 0;
+  }
+
+  .problem-list li,
+  .solution-list li {
+    padding: 7% 0;
+  }
+
+  .problems-solutions img {
+    max-width: 40%;
+    height: 100%;
+    margin-top: 2rem;
+  }
 </style>

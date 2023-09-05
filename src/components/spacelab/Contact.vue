@@ -3,7 +3,7 @@
         <div class="container-fluid">
           <div class="row">
 
-            <h1>Contact</h1>
+            <h1>{{$t('contact.title')}}</h1>
             <div class="col-lg-12 text-center">
                 <div class="row justify-content-center align-items-center">
                     <div class="social-icons d-flex justify-content-center mt-4">
@@ -24,7 +24,7 @@
                                 <i class="bi bi-geo-alt"></i>
                               </div>
                               <div class="contact-text">
-                                <p>89 Turan avenue, Astana</p>
+                                <p>{{$t('contact.address')}}</p>
                               </div>
                             </div>
                         </div>

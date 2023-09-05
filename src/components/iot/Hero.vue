@@ -8,8 +8,8 @@
             <div class="col-lg-8">
               <div class="iot-text">
                 <div class="iot-title">
-                  <h2>Satellite-Internet-of-Very-Important-Things (S-IoVIT)</h2>
-                  <h3>Connecting Earth's Vital Data with Space</h3>
+                  <h2>{{$t('heroSection.title')}}</h2>
+                  <h3>{{$t('heroSection.subtitle')}}</h3>
                 </div>
                 </div>
               </div>              

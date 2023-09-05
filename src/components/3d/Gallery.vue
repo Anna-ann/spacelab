@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Rate the quality of our work</h1>
+      <h1>{{ $t('ratingSection.heading') }}</h1>
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
           <div
@@ -29,11 +29,11 @@
     data() {
       return {
         imageList: [
-          "src/assets/3d/gallery/1.jpg",
-          "src/assets/3d/gallery/2.jpg",
-          "src/assets/3d/gallery/3.jpg",
-          "src/assets/3d/gallery/4.jpg",
-          "src/assets/3d/gallery/5.jpg",
+          "/src/assets/3d/gallery/1.jpg",
+          "/src/assets/3d/gallery/2.jpg",
+          "/src/assets/3d/gallery/3.jpg",
+          "/src/assets/3d/gallery/4.jpg",
+          "/src/assets/3d/gallery/5.jpg",
         ],
       };
     },

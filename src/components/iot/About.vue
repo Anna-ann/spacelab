@@ -1,40 +1,38 @@
 <template>
-  <section class="about" id="about">
+  <section class="iotabout" id="about">
     <div class="container-fluid">
       <div class="row">
-        <h1>About S-IoVIT</h1>
+        <h1>{{ $t('aboutSection.heading') }}</h1>
         <div class="col-lg-6">
           <div class="text">
-            <p>Experience reliable data transfer for IoT applications from critical infrastructures worldwide. Our satellite-based system ensures efficient monitoring of climate, environment, and resources</p>
+            <p>{{ $t('aboutSection.description') }}</p>
             <ul class="orange-bullet">
-              <li>Strategic infostructure that needs to be controlled <span>each moment</span></li>
-              <li>For those whose <span>business</span> depends on <span>data</span></li>
-              <li>Data transmission at <span>any</span> cost</li>
-              <li>Device that will <span>survive</span> even the most hardcore situations</li>
-           </ul>
+              <li>{{ $t('aboutSection.bullets.0') }}</li>
+              <li>{{ $t('aboutSection.bullets.1') }}</li>
+              <li>{{ $t('aboutSection.bullets.2') }}</li>
+            </ul>
           </div>
-          
         </div>
-  
-          <div class="col-lg-6">
-            <div class="position-relative">
-              <img src="/src/assets/iot/about.png" class="img-fluid" alt="">
-            </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="/src/assets/iot/about.png" class="img-fluid" alt="">
           </div>
         </div>
       </div>
-    </section>
-  </template>
-  
-  <script>
-  </script>
-  
-  <style>
-  .about .text {
-    padding-top: 20%;
-  }
-  
-.about span {
+    </div>
+  </section>
+</template>
+
+<script>
+</script>
+
+<style>
+.iotabout .text {
+  padding-top: 20%;
+}
+
+.iotabout span {
   color: #FF6B00;
 }
 
@@ -54,5 +52,9 @@
   border-color: transparent transparent transparent #FF7A00;
   margin-right: 10px;
 }
-  </style>
-  
+
+.orange-bullet li {
+  display: flex;
+  align-items: center;
+}
+</style>

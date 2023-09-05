@@ -2,7 +2,7 @@
   <section class="partners section-default mt-none mb-none">
     <div class="container-fluid">
       <div class="row">
-        <h1 class="mb-sm">Our Partners</h1>
+        <h1 class="mb-sm">{{$t('partners.title')}}</h1>
         <div class="row">
           <div
             v-for="(partner, index) in partners"

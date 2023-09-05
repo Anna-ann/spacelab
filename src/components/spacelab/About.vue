@@ -1,76 +1,112 @@
 <template>
-  <section class="about" id="about">
+  <section class="mainabout" id="about">
     <div class="container-fluid">
       <div class="row">
-        <h1>About us</h1>
+        <h1>{{$t('about.title')}}</h1>
         <div class="col-lg-6">
-          <p>Startup company providing innovative solutions for industrial technologies, from additive installations to telecommunications</p>
+          <p>{{$t('about.text')}}</p>
           <ul class="list-group">
             <li
               class="list-group-item"
-              v-for="list in lists"
-              :key="list.title"
               :style="{
                 backgroundColor: isDarkTheme ? '#ffffff' : '#212529',
                 color: isDarkTheme ? '#212529' : '#ffffff'
               }"
             >
               <div class="list-item">
-                <i :class="list.icon"></i>
+                <i class="bi bi-person-badge-fill"></i>
                 <div class="item-content">
-                  <h3>{{ list.title }}</h3>
-                  <p>{{ list.text }}</p>
+                  <h3>{{$t('about.lists.0.title')}}</h3>
+                  <p>{{$t('about.lists.0.text')}}</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item"
+              :style="{
+                backgroundColor: isDarkTheme ? '#ffffff' : '#212529',
+                color: isDarkTheme ? '#212529' : '#ffffff'
+              }"
+            >
+              <div class="list-item">
+                <i class="bi bi-person-check-fill"></i>
+                <div class="item-content">
+                  <h3>{{$t('about.lists.1.title')}}</h3>
+                  <p>{{$t('about.lists.1.text')}}</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item"
+              :style="{
+                backgroundColor: isDarkTheme ? '#ffffff' : '#212529',
+                color: isDarkTheme ? '#212529' : '#ffffff'
+              }"
+            >
+              <div class="list-item">
+                <i class="bi bi-clipboard-data-fill"></i>
+                <div class="item-content">
+                  <h3>{{$t('about.lists.2.title')}}</h3>
+                  <p>{{$t('about.lists.2.text')}}</p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
   
-          <div class="col-lg-6">
-            <div class="position-relative">
-              <img src="/src/assets/about.jpg" class="img-fluid" alt="">
-              <div class="play-btn-container" v-if="!showVideo">
-                <button type="button" class="play-btn" @click="playVideo">
-                  <i class="bi bi-play"></i>
-                </button>
-              </div>
-              <iframe v-if="showVideo" class="video-frame" :src="videoUrl" frameborder="0" allowfullscreen></iframe>
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="/src/assets/about.jpg" class="img-fluid" alt="">
+            <div class="play-btn-container" v-if="!showVideo">
+              <button type="button" class="play-btn" @click="playVideo">
+                <i class="bi bi-play"></i>
+              </button>
             </div>
+            <iframe v-if="showVideo" class="video-frame" :src="videoUrl" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
+    </div>
     </section>
   </template>
   
   <script>
-  export default {
-    name: 'About',
-    props: {
+export default {
+  name: 'About',
+  props: {
     isDarkTheme: Boolean,
   },
-    data() {
-      return {
-        lists: [
-          { title: 'Expertise', text: 'By choosing us, you trust a wide range of specialists', icon: 'bi bi-person-badge-fill'},
-          { title: 'Customer focus', text: 'You can contact us for any questions within 3 months', icon: 'bi bi-person-check-fill' },
-          { title: 'Experience', text: 'We have been successfully providing our services for more than 3 years', icon: 'bi bi-clipboard-data-fill' },
-        ],
-        showVideo: false,
-        videoUrl: '/src/assets/aboutus.mp4',
-        playButtonClicked: false,
+  data() {
+    return {
+      showVideo: false,
+      playButtonClicked: false,
+    };
+  },
+  computed: {
+    videoUrl() {
+      const lang = this.$i18n.locale;
+
+   
+      const videoPaths = {
+        en: '/src/assets/aboutusen.mp4',
       };
+
+   
+      return videoPaths[lang] || '/src/assets/aboutus.mp4';
     },
-    methods: {
-      playVideo() {
-        this.showVideo = true;
-        this.playButtonClicked = true;
-      },
+  },
+  methods: {
+    playVideo() {
+      this.showVideo = true;
+      this.playButtonClicked = true;
     },
-  };
-  </script>
+  },
+};
+</script>
+
   
   <style>
-  .about {
+  .mainabout {
     text-align: left;
     background-color: var(--bg-color); 
   }
@@ -80,28 +116,28 @@
     color: var(--text-color) !important; 
   }
   
-  .about h1 {
+  .mainabout h1 {
     text-align: center;
   }
 
-  .about p {
+  .mainabout p {
     text-align: justify;
   }
   
-  .list-group {
+  .mainabout .list-group {
     margin: 5px 0;
   }
   
-  .list-item {
+  .mainabout .list-item {
     display: flex;
     align-items: center;
   }
   
-  .list-item i {
+  .mainabout .list-item i {
     margin-right: 10px;
   }
 
-  .list-group-item {
+  .mainabout .list-group-item {
     border: none; 
   }
   

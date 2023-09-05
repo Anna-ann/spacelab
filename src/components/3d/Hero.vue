@@ -1,32 +1,28 @@
 <template>
-    <section id="hero" class="hero d-flex">
-        <div class="container">
-          <div class="row gy-4 d-flex justify-content-between">
-            <div class="col-lg-4 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <div class="text">
-                <div class="title">
-                  <h1>3D printers</h1>
-                  <h3>Made in Kazakhstan!</h3>
-                </div>
-  
-                <ul class="orange-bullet">
-                  <li>3-months waranty</li>
-                  <li>Training on printer operation</li>
-                  <li>Delivery anywhere in Kazakhstan</li>
-                  <li>1-year post-sale support</li>
-                </ul>
-              </div>
-              </div>
-              
-    
-            <div class="col-lg-8 order-1 order-lg-2 hero-img">
-              <img src="/src/assets/3d/hero-img.png" class="img-fluid mb-3 mb-lg-0" alt="">
+  <section id="hero" class="hero d-flex">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-4 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <div class="text">
+            <div class="title">
+              <h1>{{ $t('space3dHero.title') }}</h1>
+              <h3>{{ $t('space3dHero.subtitle') }}</h3>
             </div>
-    
+            <ul class="orange-bullet">
+              <li>{{ $t('space3dHero.bullets.0') }}</li>
+              <li>{{ $t('space3dHero.bullets.1') }}</li>
+              <li>{{ $t('space3dHero.bullets.2') }}</li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="col-lg-8 order-1 order-lg-2 hero-img">
+          <img src="/src/assets/3d/hero-img.png" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
 
 <script>
     export default {

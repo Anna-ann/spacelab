@@ -1,6 +1,6 @@
 <template>
     <section id="roadmap" class="roadmap">
-        <h1>Roadmap</h1>
+        <h1>{{$t('roadmapSection.title')}}</h1>
       <div class="wrapper">
         <div class="center-line">
           <a href="#" class="scroll-icon"><i class=""></i></a>
@@ -9,40 +9,40 @@
           <section>
             <i class="icon fas fa-home"></i>
             <div class="details">
-              <span class="title">Present: Letter of Intent with TransTelecom for 5000 devices</span>
-              <span>Now</span>
+              <span class="title">{{$t('roadmapSection.items.0.title')}}</span>
+              <span>{{$t('roadmapSection.items.0.year')}}</span>
             </div>
-            <p>TransTelecom has shown interest in acquiring 5000 S-IoVIT devices, marking a significant step towards realizing our mission.</p>
+            <p>{{$t('roadmapSection.items.0.description')}}</p>
           </section>
         </div>
         <div class="row row-2">
           <section>
             <i class="bi bi-star-fill"></i>
             <div class="details">
-              <span class="title">2023: Launching Sales in Central Asia</span>
-              <span>2023</span>
-            </div>
-            <p>We are excited to introduce S-IoVIT in Central Asia, providing reliable data transfer solutions to the region's critical infrastructures.</p>
+              <span class="title">{{$t('roadmapSection.items.1.title')}}</span>
+              <span>{{$t('roadmapSection.items.1.year')}}</span>
+            </div>  
+            <p>{{$t('roadmapSection.items.1.description')}}</p>
           </section>
         </div>
         <div class="row row-1">
           <section>
             <i class="bi bi-globe"></i>
             <div class="details">
-              <span class="title">2024: Expanding to Middle East, East Asia, and Lat Am</span>
-              <span>2024</span>
+              <span class="title">{{$t('roadmapSection.items.2.title')}}</span>
+              <span>{{$t('roadmapSection.items.2.year')}}</span>
             </div>
-            <p>Our expansion journey continues as we bring S-IoVIT to the Middle East, East Asia, and Latin America to serve more clients.</p>
+            <p>{{$t('roadmapSection.items.2.description')}}</p>
           </section>
         </div>
         <div class="row row-2">
           <section>
             <i class="bi bi-rocket-takeoff-fill"></i>
             <div class="details">
-              <span class="title">2025: Launching IoT Satellite Constellation</span>
-              <span>2025</span>
+              <span class="title">{{$t('roadmapSection.items.3.title')}}</span>
+              <span>{{$t('roadmapSection.items.3.year')}}</span>
             </div>
-            <p>We are reaching for the stars by launching our IoT satellite constellation, ensuring global coverage for seamless data transmission.</p>
+            <p>{{$t('roadmapSection.items.3.description')}}</p>
           </section>
         </div>
       </div>

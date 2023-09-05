@@ -42,7 +42,8 @@ import Navbar from './components/shared/Navbar.vue';
 };
 </script>
   <style>
-    @import './src/style.css';
+  @import "/src/style.css";
+
 
     .scroll-to-top-button {
       position: fixed;

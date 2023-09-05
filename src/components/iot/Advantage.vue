@@ -2,15 +2,15 @@
   <section id="advantage" class="competitive-advantage">
     <div class="container-fluid">
       <div class="row">
-        <h1>Why Choose S-IoVIT?</h1>
+        <h1>{{$t('advantageSection.heading')}}</h1>
         <div class="col-lg-6">
           <img src="/src/assets/iot/iot-reasons.png" alt="">
         </div>
         <div class="col-lg-6">
           <ul class="list-unstyled">
-            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> Collect data up to 10 km via LoRa, Wi-Fi, Ethernet</li>
-            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> Secure blockchain node for data protection and verification</li>
-            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> Global data transmission from and to any location</li>
+            <li class="icon-li"><i class="bi bi-check-circle-fill"></i>{{$t('advantageSection.items.0')}}</li>
+            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> {{$t('advantageSection.items.1')}}</li>
+            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> {{$t('advantageSection.items.2')}}</li>
           </ul>
         </div>
       </div>

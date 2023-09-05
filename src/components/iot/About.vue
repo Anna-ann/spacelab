@@ -1,6 +1,6 @@
 <template>
   <section class="iotabout" id="about">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <h1>{{ $t('aboutSection.heading') }}</h1>
         <div class="col-lg-6">

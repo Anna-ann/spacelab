@@ -1,51 +1,55 @@
 <template>
     <section id="roadmap" class="roadmap">
-        <h1>{{$t('roadmapSection.title')}}</h1>
-      <div class="wrapper">
-        <div class="center-line">
-          <a href="#" class="scroll-icon"><i class=""></i></a>
-        </div>
-        <div class="row row-1">
-          <section>
-            <i class="icon fas fa-home"></i>
-            <div class="details">
-              <span class="title">{{$t('roadmapSection.items.0.title')}}</span>
-              <span>{{$t('roadmapSection.items.0.year')}}</span>
-            </div>
-            <p>{{$t('roadmapSection.items.0.description')}}</p>
-          </section>
-        </div>
-        <div class="row row-2">
-          <section>
-            <i class="bi bi-star-fill"></i>
-            <div class="details">
-              <span class="title">{{$t('roadmapSection.items.1.title')}}</span>
-              <span>{{$t('roadmapSection.items.1.year')}}</span>
-            </div>  
-            <p>{{$t('roadmapSection.items.1.description')}}</p>
-          </section>
-        </div>
-        <div class="row row-1">
-          <section>
-            <i class="bi bi-globe"></i>
-            <div class="details">
-              <span class="title">{{$t('roadmapSection.items.2.title')}}</span>
-              <span>{{$t('roadmapSection.items.2.year')}}</span>
-            </div>
-            <p>{{$t('roadmapSection.items.2.description')}}</p>
-          </section>
-        </div>
-        <div class="row row-2">
-          <section>
-            <i class="bi bi-rocket-takeoff-fill"></i>
-            <div class="details">
-              <span class="title">{{$t('roadmapSection.items.3.title')}}</span>
-              <span>{{$t('roadmapSection.items.3.year')}}</span>
-            </div>
-            <p>{{$t('roadmapSection.items.3.description')}}</p>
-          </section>
-        </div>
+<div class="container">
+  <div class="row">
+    <h1>{{$t('roadmapSection.title')}}</h1>
+    <div class="wrapper">
+      <div class="center-line">
+        <a href="#" class="scroll-icon"><i class=""></i></a>
       </div>
+      <div class="row row-1">
+        <section>
+          <i class="icon fas fa-home"></i>
+          <div class="details">
+            <span class="title">{{$t('roadmapSection.items.0.title')}}</span>
+            <span>{{$t('roadmapSection.items.0.year')}}</span>
+          </div>
+          <p>{{$t('roadmapSection.items.0.description')}}</p>
+        </section>
+      </div>
+      <div class="row row-2">
+        <section>
+          <i class="bi bi-star-fill"></i>
+          <div class="details">
+            <span class="title">{{$t('roadmapSection.items.1.title')}}</span>
+            <span>{{$t('roadmapSection.items.1.year')}}</span>
+          </div>  
+          <p>{{$t('roadmapSection.items.1.description')}}</p>
+        </section>
+      </div>
+      <div class="row row-1">
+        <section>
+          <i class="bi bi-globe"></i>
+          <div class="details">
+            <span class="title">{{$t('roadmapSection.items.2.title')}}</span>
+            <span>{{$t('roadmapSection.items.2.year')}}</span>
+          </div>
+          <p>{{$t('roadmapSection.items.2.description')}}</p>
+        </section>
+      </div>
+      <div class="row row-2">
+        <section>
+          <i class="bi bi-rocket-takeoff-fill"></i>
+          <div class="details">
+            <span class="title">{{$t('roadmapSection.items.3.title')}}</span>
+            <span>{{$t('roadmapSection.items.3.year')}}</span>
+          </div>
+          <p>{{$t('roadmapSection.items.3.description')}}</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
   </template>
   
@@ -55,7 +59,7 @@
   };
   </script>
   
-  <style>
+  <style scoped>
   .wrapper {
     max-width: 1080px;
     margin: 50px auto;

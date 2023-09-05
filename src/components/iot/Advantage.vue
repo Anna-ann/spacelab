@@ -1,6 +1,6 @@
 <template>
   <section id="advantage" class="competitive-advantage">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <h1>{{$t('advantageSection.heading')}}</h1>
         <div class="col-lg-6">

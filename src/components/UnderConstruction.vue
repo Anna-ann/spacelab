@@ -1,8 +1,14 @@
 <template>
-    <div class="under-construction">
-      <h2>Page Under Construction</h2>
-      <p>This page is currently under construction. Check back later for updates.</p>
+<section class="construction">
+  <div class="container">
+    <div class="row">
+      <div class="under-construction">
+        <h2>Page Under Construction</h2>
+        <p>This page is currently under construction. Check back later for updates.</p>
+      </div>
     </div>
+  </div>
+</section>
   </template>
   
   <script>

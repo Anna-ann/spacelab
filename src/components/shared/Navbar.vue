@@ -1,7 +1,7 @@
 <template>
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-    <div class="container-fluid">
+    <div class="container">
       <router-link class="navbar-brand" to="/">
         <img src="/src/assets/logo.svg" width="120" height="55">
       </router-link>
@@ -144,15 +144,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 header {
   width: 100%;
   background-color: var(--bg-color);
   transition: background-color 0.3s ease;
+  max-width: none;
 }
 .navbar {
-  width: 100%;
   max-width: none;
 }
 .navbar-icons {

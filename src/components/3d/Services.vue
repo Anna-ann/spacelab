@@ -1,6 +1,6 @@
 <template>
     <section class="services" id="services">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1>Provided services</h1>

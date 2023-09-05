@@ -1,6 +1,8 @@
 <template>
-  <div class="testimonials">
-    <h1>{{ $t('testimonialsSection.testimonialsHeading') }}</h1>
+  <section class="testimonials">
+    <div class="container">
+      <div class="row">
+        <h1>{{ $t('testimonialsSection.testimonialsHeading') }}</h1>
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
       <div class="carousel-inner">
         <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-item" :class="{ active: index === 0 }">
@@ -30,7 +32,9 @@
         </div>
       </div>
     </div>
-  </div>
+      </div>
+    </div>
+  </section>
 </template>
   
   <script>

@@ -4,21 +4,19 @@
       <h1>{{$t('problemsSection.title')}}</h1>
       <div class="row">
         <div class="column">
-          <div class="problem-list">
+          <div class="list">
             <ul>
-              <li>{{$t('problemsSection.problems.0')}}</li>
-              <li>{{$t('problemsSection.problems.1')}}</li>
-              <li>{{$t('problemsSection.problems.2')}}</li>
+              <li v-for="(problem, index) in problems" :key="index">{{ problem }}</li>
             </ul>
           </div>
         </div>
-        <img src="/src/assets/problems.png" alt="Problems and Solutions Image" class="image" />
         <div class="column">
-          <div class="solution-list">
+          <img src="/src/assets/problems.png" alt="Problems and Solutions Image" class="image" />
+        </div>
+        <div class="column">
+          <div class="list">
             <ul>
-              <li>{{$t('problemsSection.solutions.0')}}</li>
-              <li>{{$t('problemsSection.solutions.1')}}</li>
-              <li>{{$t('problemsSection.solutions.2')}}</li>
+              <li v-for="(solution, index) in solutions" :key="index">{{ solution }}</li>
             </ul>
           </div>
         </div>
@@ -30,6 +28,20 @@
 <script>
 export default {
   name: 'Problems',
+  data() {
+    return {
+      problems: [
+        this.$t('problemsSection.problems.0'),
+        this.$t('problemsSection.problems.1'),
+        this.$t('problemsSection.problems.2'),
+      ],
+      solutions: [
+        this.$t('problemsSection.solutions.0'),
+        this.$t('problemsSection.solutions.1'),
+        this.$t('problemsSection.solutions.2'),
+      ],
+    };
+  },
 };
 </script>
 
@@ -47,27 +59,41 @@ export default {
 
   .problems-solutions .row {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .problems-solutions .column {
-    flex: 1; 
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
   }
 
-  .problem-list ul,
-  .solution-list ul {
-    list-style: none;
+  .problems-solutions .list {
     padding: 10% 0;
   }
 
-  .problem-list li,
-  .solution-list li {
+  .problems-solutions h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .problems-solutions ul {
+    list-style: none;
+  }
+
+  .problems-solutions li {
     padding: 7% 0;
   }
 
   .problems-solutions img {
-    max-width: 40%;
-    height: 100%;
-    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .problems-solutions .column {
+      flex-basis: 100%;
+    }
   }
 </style>

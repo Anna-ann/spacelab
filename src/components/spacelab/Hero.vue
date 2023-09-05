@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <h2>{{ $t('hero.spaceStarts') }}</h2>

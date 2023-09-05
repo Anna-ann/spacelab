@@ -1,6 +1,6 @@
 <template>
   <section class="partners section-default mt-none mb-none">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <h1 class="mb-sm">{{$t('partners.title')}}</h1>
         <div class="row">

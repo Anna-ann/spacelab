@@ -1,5 +1,7 @@
 <template>
   <section class="application">
+<div class="container">
+  <div class="row">
     <h1>{{ $t('applicationSection.heading') }}</h1>
     <div class="image-list-page">
       <div class="image-list">
@@ -16,6 +18,8 @@
         <img :src="currentImage" :alt="$t('applicationSection.displayedImage')" />
       </div>
     </div>
+  </div>
+</div>
   </section>
 </template>
 

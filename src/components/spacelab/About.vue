@@ -1,6 +1,6 @@
 <template>
   <section class="mainabout" id="about">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <h1>{{$t('about.title')}}</h1>
         <div class="col-lg-6">

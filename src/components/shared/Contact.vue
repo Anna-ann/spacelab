@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact section">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-12">
           <h1>{{ $t('contactSection.heading') }}</h1>

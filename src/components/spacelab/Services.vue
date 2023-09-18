@@ -6,10 +6,10 @@
           <h1>{{$t('services.title')}}</h1>
 
           <div class="d-flex justify-content-center flex-wrap">
-            <router-link :to="cards[0].url" class="card-link mb-5 mx-3">
+            <router-link to="/space3d" class="card-link mb-5 mx-3">
               <div class="card custom-card" style="width: 18rem; height: 28rem;">
                 <div class="img-container">
-                  <img :src="getImageUrl(cards[0].title)" class="card-img" alt="...">
+                  <img src="/src/assets/space3d.jpg" class="card-img" alt="...">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">{{$t('services.cards.0.title')}}</h3>
@@ -17,10 +17,10 @@
                 </div>
               </div>
             </router-link>
-            <router-link :to="cards[1].url" class="card-link mb-5 mx-3">
+            <router-link to="/spaceiot" class="card-link mb-5 mx-3">
               <div class="card custom-card" style="width: 18rem; height: 28rem;">
                 <div class="img-container">
-                  <img :src="getImageUrl(cards[1].title)" class="card-img" alt="...">
+                  <img src="/src/assets/spaceiot.jpg" class="card-img" alt="...">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">{{$t('services.cards.1.title')}}</h3>
@@ -28,10 +28,10 @@
                 </div>
               </div>
             </router-link>
-            <router-link :to="cards[2].url" class="card-link mb-5 mx-3">
+            <router-link to="/spacecubs" class="card-link mb-5 mx-3">
               <div class="card custom-card" style="width: 18rem; height: 28rem;">
                 <div class="img-container">
-                  <img :src="getImageUrl(cards[2].title)" class="card-img" alt="...">
+                  <img src="/src/assets/spacecubs.jpg" class="card-img" alt="...">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">{{$t('services.cards.2.title')}}</h3>
@@ -48,31 +48,8 @@
 
 <script>
 export default {
-  name: 'Services',
-  data() {
-    return {
-      cards: [
-        {
-          title: 'Space3D',
-          url: '/space3d',
-        },
-        {
-          title: 'SpaceIoT',
-          url: '/spaceiot',
-        },
-        {
-          title: 'SpaceCUBS',
-          url: '/spacecubs',
-        },
-      ],
-    };
-  },
-  methods: {
-    getImageUrl(title) {
-      return `/src/assets/${title.toLowerCase()}.jpg`;
-    },
-  },
-};
+  name: 'Services'
+  }
 </script>
 
 <style>

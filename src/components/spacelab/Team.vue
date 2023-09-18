@@ -6,11 +6,35 @@
           <h1>{{$t('team.title')}}</h1>
 
           <div class="d-flex justify-content-center flex-wrap">
-            <div class="card mb-5 mx-3" v-for="(card, index) in cards" :key="index" style="width: 13.5rem;">
-              <img :src="getImageUrl(index + 1)" class="card-img-fluid" alt="...">
+            <div class="card mb-5 mx-3" style="width: 13.5rem;">
+              <img src="/src/assets/team/1.png" class="card-img-fluid" alt="...">
               <div class="card-body">
-                <h3 class="card-title">{{$t(`team.cards.${index}.title`)}}</h3>
-                <p class="card-text">{{$t(`team.cards.${index}.text`)}}</p>
+                <h3 class="card-title">{{$t('team.cards.0.title')}}</h3>
+                <p class="card-text">{{$t('team.cards.0.text')}}</p>
+              </div>
+            </div>
+
+            <div class="card mb-5 mx-3" style="width: 13.5rem;">
+              <img src="/src/assets/team/2.png" class="card-img-fluid" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">{{$t('team.cards.1.title')}}</h3>
+                <p class="card-text">{{$t('team.cards.1.text')}}</p>
+              </div>
+            </div>
+
+            <div class="card mb-5 mx-3" style="width: 13.5rem;">
+              <img src="/src/assets/team/3.png" class="card-img-fluid" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">{{$t('team.cards.2.title')}}</h3>
+                <p class="card-text">{{$t('team.cards.2.text')}}</p>
+              </div>
+            </div>
+
+            <div class="card mb-5 mx-3" style="width: 13.5rem;">
+              <img src="/src/assets/team/4.png" class="card-img-fluid" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">{{$t('team.cards.3.title')}}</h3>
+                <p class="card-text">{{$t('team.cards.3.text')}}</p>
               </div>
             </div>
           </div>
@@ -21,32 +45,10 @@
 </template>
 
 
+
 <script>
 export default {
-  name: 'Team',
-  data() {
-    return {
-      cards: [
-        {
-          title: 'Arman Bekembayev',
-        },
-        {
-          title: 'Alexander Bychkov',
-        },
-        {
-          title: 'Dauren Aubakirov',
-        },
-        {
-          title: 'Sayat Akhmedzhanov',
-        },
-      ],
-    };
-  },
-  methods: {
-    getImageUrl(index) {
-      return `/src/assets/team/${index}.png`;
-    },
-  },
+  name: 'Team'
 };
 </script>
 

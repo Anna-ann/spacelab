@@ -17,6 +17,8 @@
                 </div>
               </div>
             </router-link>
+
+ 
             <router-link to="/spaceiot" class="card-link mb-5 mx-3">
               <div class="card custom-card" style="width: 18rem; height: 28rem;">
                 <div class="img-container">
@@ -28,6 +30,8 @@
                 </div>
               </div>
             </router-link>
+
+ 
             <router-link to="/spacecubs" class="card-link mb-5 mx-3">
               <div class="card custom-card" style="width: 18rem; height: 28rem;">
                 <div class="img-container">
@@ -46,10 +50,11 @@
   </section>
 </template>
 
+
 <script>
 export default {
   name: 'Services'
-  }
+};
 </script>
 
 <style>

@@ -4,13 +4,19 @@
       <div class="row">
         <h1 class="mb-sm">{{$t('partners.title')}}</h1>
         <div class="row">
-          <div
-            v-for="(partner, index) in partners"
-            :key="index"
-            class="col-sm-6 col-md-4 col-lg-4"
-          >
+          <div class="col-sm-6 col-md-4 col-lg-4">
             <div class="square-holder">
-              <img :alt="partner.name" :src="partner.logo" />
+              <img alt="TTC" src="/src/assets/iot/ttc.svg" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="square-holder">
+              <img alt="Med365" src="/src/assets/iot/med365.png" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="square-holder">
+              <img alt="Alemagro" src="/src/assets/iot/alemagro.png" />
             </div>
           </div>
         </div>
@@ -22,13 +28,7 @@
 <script>
 export default {
   data() {
-    return {
-      partners: [
-        { name: 'TTC', logo: '/src/assets/iot/ttc.svg' },
-        { name: 'Med365', logo: '/src/assets/iot/med365.png' },
-        { name: 'Alemagro', logo: '/src/assets/iot/alemagro.png' },
-      ],
-    };
+    return {};
   },
 };
 </script>

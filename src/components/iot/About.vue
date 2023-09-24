@@ -15,8 +15,11 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="position-relative">
-            <img src="/src/assets/iot/about.png" class="img-fluid" alt="">
+          <div class="position-relative video-container">
+            <video class="video-fluid" id="about-video" loop @click="toggleVideo">
+              <source src="/src/assets/iot/about.mp4" type="video/mp4">
+            </video>
+            <div class="play-button" v-if="!isVideoPlaying" @click="playVideo"></div>
           </div>
         </div>
       </div>
@@ -25,6 +28,30 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      isVideoPlaying: false,
+    };
+  },
+  methods: {
+    playVideo() {
+      const video = document.getElementById('about-video');
+      video.play();
+      this.isVideoPlaying = true;
+    },
+    toggleVideo() {
+      const video = document.getElementById('about-video');
+      if (this.isVideoPlaying) {
+        video.pause();
+        this.isVideoPlaying = false;
+      } else {
+        video.play();
+        this.isVideoPlaying = true;
+      }
+    },
+  },
+};
 </script>
 
 <style>
@@ -56,5 +83,42 @@
 .orange-bullet li {
   display: flex;
   align-items: center;
+}
+
+.video-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.play-button:before {
+  content: '';
+  border-left: 25px solid #FF6B00;
+  border-right: none;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 </style>

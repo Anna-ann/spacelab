@@ -48,13 +48,13 @@ export default {
 <style scoped>
   .problems-solutions {
     padding: 2rem 0;
-    text-align: justify;
   }
 
   .problems-solutions .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; 
   }
 
   .problems-solutions .row {
@@ -66,6 +66,7 @@ export default {
   .problems-solutions .column {
     flex-basis: calc(33.33% - 1rem);
     margin: 0.5rem;
+    text-align: justify;
   }
 
   .problems-solutions .list {

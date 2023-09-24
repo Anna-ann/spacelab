@@ -4,7 +4,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #fff;
+  color: #FAFAFA;
 }
 
 i {
@@ -19,7 +19,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  color: #fff;
+  color: #FAFAFA;
   text-align: center;
   background-color: #212529;
 }
@@ -94,31 +94,31 @@ section {
 .btn-primary {
   border: 2px solid #FF6B00;
   background-color: #FF6B00;
-  color: #fff;
+  color: #FAFAFA;
   border-radius: 3%;
 }
 
 .btn-primary:hover {
   background-color: #212529;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #FAFAFA;
+  color: #FAFAFA;
   border-radius: 3%;
 }
 
 .dark-theme {
   background-color: #212529;
-  color: #ffffff;
+  color: #FAFAFA;
 }
 
 .light-theme {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   color: #212529;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #212529;
-    background-color: #ffffff;
+    background-color: #FAFAFA;
   }
   a:hover {
     color: #FF6B00;
@@ -127,7 +127,7 @@ section {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #ffffff;
+    color: #FAFAFA;
     background-color: #212529;
   }
   a:hover {

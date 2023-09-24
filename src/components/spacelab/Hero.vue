@@ -119,13 +119,13 @@ export default {
   background-color: var(--card-bg-color) !important;
   color: var(--text-color) !important;
   text-align: justify;
-  color: #fff;
+  color: #FAFAFA;
   border: none;
   display: flex;
 }
 
 .hero p {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .hero .icon h4 {
@@ -151,6 +151,7 @@ export default {
 }
 
 .card-text {
-  margin-top: 10px;
+  margin: 10% 0;
+
 }
 </style>

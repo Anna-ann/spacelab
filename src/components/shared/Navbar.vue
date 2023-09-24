@@ -70,8 +70,6 @@
 </template>
 
 <script>
-import VueScrollTo from 'vue-scrollto';
-
 export default {
   name: 'Navbar',
   data() {
@@ -87,18 +85,15 @@ export default {
     this.$i18n.locale = locale;
     localStorage.setItem('selectedLanguage', locale);
     },
-    scrollToElement(id) {
-      VueScrollTo.scrollTo(id, 500, { offset: -100 });
-    },
     toggleTheme() {
       this.isDarkTheme = !this.isDarkTheme;
       this.updateThemeClasses();
 
-      const textColor = this.isDarkTheme ? '#ffffff' : '#212529';
+      const textColor = this.isDarkTheme ? '#FAFAFA' : '#212529';
 
       document.documentElement.style.setProperty('--text-color', textColor);
-      document.documentElement.style.setProperty('--bg-color', this.isDarkTheme ? '#212529' : '#ffffff');
-      document.documentElement.style.setProperty('--card-bg-color', this.isDarkTheme ? '#212529' : '#ffffff');
+      document.documentElement.style.setProperty('--bg-color', this.isDarkTheme ? '#212529' : '#FAFAFA');
+      document.documentElement.style.setProperty('--card-bg-color', this.isDarkTheme ? '#212529' : '#FAFAFA');
 
       localStorage.setItem('isDarkTheme', this.isDarkTheme.toString());
 
@@ -154,6 +149,9 @@ header {
 }
 .navbar {
   max-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .navbar-icons {
   display: flex;
@@ -161,22 +159,22 @@ header {
 }
 
 .navbar-icons i {
-  color: #fff;
+  color: #FAFAFA;
   font-size: 1.5rem;
 }
 
 .light-theme {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   color: #212529;
 }
 
 .dark-theme {
   background-color: #212529;
-  color: #ffffff;
+  color: #FAFAFA;
 }
 
 .btn-primary a {
-  color: #fff;
+  color: #FAFAFA;
 }
 
 .custom-dropdown-toggle {

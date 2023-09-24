@@ -3,11 +3,13 @@
     <div class="container">
       <div class="row">
         <h1>{{ $t('testimonialsSection.testimonialsHeading') }}</h1>
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-item" :class="{ active: index === 0 }">
-              <p class="testimonial-text">{{ $t(`testimonialsSection.testimonial${index + 1}`) }}</p>
-              <p class="testimonial-author">{{ $t(`testimonialsSection.testimonialAuthor${index + 1}`) }}</p>
+              <div class="testimonial-content">
+                <p class="testimonial-text">{{ $t(`testimonialsSection.testimonial${index + 1}`) }}</p>
+                <p class="testimonial-author">{{ $t(`testimonialsSection.testimonialAuthor${index + 1}`) }}</p>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -58,19 +60,24 @@ export default {
   
 <style scoped>
 .testimonials {
-  padding: 40px;
+  padding: 20px;
 }
 
 .carousel-inner {
   text-align: center;
 }
 
+.testimonial-content {
+  max-width: 80%; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
 .testimonial-text {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 10px;
-  padding: 0 20px; 
-  text-align: justify; 
-  text-justify: distribute-all-lines; 
+  padding: 0 10px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
 }
 
 .testimonial-author {
@@ -79,14 +86,13 @@ export default {
 }
 
 .logo-image {
-  max-width: 100px;
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 320px) {
-  .testimonial-text {
-    font-size: 1em;
-    padding: 0 10px; 
+@media (max-width: 576px) {
+  .testimonial-content {
+    max-width: 100%; /* Adjust max-width for smaller screens */
   }
 }
 </style>

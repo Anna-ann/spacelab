@@ -9,8 +9,8 @@
         <div class="col-lg-6">
           <ul class="list-unstyled">
             <li class="icon-li"><i class="bi bi-check-circle-fill"></i>{{$t('advantageSection.items.0')}}</li>
-            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> {{$t('advantageSection.items.1')}}</li>
-            <li class="icon-li"><i class="bi bi-check-circle-fill"></i> {{$t('advantageSection.items.2')}}</li>
+            <li class="icon-li"><i class="bi bi-check-circle-fill"></i>{{$t('advantageSection.items.1')}}</li>
+            <li class="icon-li"><i class="bi bi-check-circle-fill"></i>{{$t('advantageSection.items.2')}}</li>
           </ul>
         </div>
       </div>
@@ -18,16 +18,15 @@
   </section>
 </template>
 
-
-<style>
+<style scoped>
 .competitive-advantage img {
-  max-width: 80%;
+  max-width: 80%; 
 }
 
 .competitive-advantage ul {
   font-size: 18px;
-  padding-top: 200px;
-  text-align: justify;
+  text-align: justify; 
+  padding-top: 150px;
 }
 
 .competitive-advantage ul li {
@@ -44,4 +43,10 @@
   color: #FF6B00;
 }
 
+@media (max-width: 768px) {
+  .competitive-advantage ul {
+    font-size: 18px;
+    padding-top: 80px; 
+  }
+}
 </style>

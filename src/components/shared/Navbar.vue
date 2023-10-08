@@ -27,6 +27,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/spacecubs">SpaceCUBS</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/hackathon">NASA Hackathon</router-link>
+          </li>
         </ul>
       </div>
 

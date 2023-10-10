@@ -1,4 +1,5 @@
 <template>
+  <h1>Map of the most vulnerable places in Kazakhstan</h1>
   <div class="map-container" ref="mapContainer"></div>
 </template>
 
@@ -17,8 +18,8 @@ export default {
       const mapContainer = this.$refs.mapContainer;
 
       const map = L.map(mapContainer, {
-        center: [48.91270306655161, 72.72895038291446],
-        zoom: 10,
+        center: [48.6488, 67.57394285714285],
+        zoom: 6,
         zoomControl: true,
       });
 
@@ -41,6 +42,18 @@ export default {
 <style scoped>
 .map-container {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .map-container {
+    height: 300px;
+
+    @media only screen and (max-width: 600px) {
+      .map-container {
+        height: 300px;
+      }
+    }
+  }
 }
 </style>

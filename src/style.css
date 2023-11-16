@@ -88,7 +88,7 @@ p {
 }
 
 section {
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 .btn-primary {
@@ -96,6 +96,7 @@ section {
   background-color: #FF6B00;
   color: #FAFAFA;
   border-radius: 3%;
+  font-size: 1.3em;
 }
 
 .btn-primary:hover {

@@ -4,197 +4,228 @@
     "about": "About",
     "contact": "Contact"
   },
-    "hero": {
-      "spaceStarts": "Space starts from Earth",
-      "spaceStartsDescription": "We produce 3D printers, IoVIT modems and satellites",
-      "cards": [
-        {
-          "text": "The production of large-sized and industrial 3D printers and printing for space, med and deep tech industries",
-          "buttonText": "more..."
-        },
-        {
-          "text": "Creation of IoT infrastructure and satellite data transmission independent of mobile network coverage",
-          "buttonText": "more..."
-        },
-        {
-          "text": "Space Commercial Unified Blockchain System provide anonymous messaging for blockchain and IoT applications",
-          "buttonText": "more..."
-        }
-      ]
-    },
-    "about": {
-      "title": "About us",
-      "text": "Startup company providing innovative solutions for industrial technologies, from additive installations to telecommunications",
-      "lists": [
-        {
-          "title": "Expertise",
-          "text": "By choosing us, you trust a wide range of specialists"
-        },
-        {
-          "title": "Customer focus",
-          "text": "You can contact us for any questions within 3 months"
-        },
-        {
-          "title": "Experience",
-          "text": "We have been successfully providing our services for more than 3 years"
-        }
-      ]
-    },
-    "problemsSection": {
-      "title": "Challenges",
-      "problems": [
-        "Production halted due to broken part and lack of technical support",
-        "Limited network coverage, high costs, and data unavailability across wide distances",
-        "Data unavailability across wide distances, lack of info for remote military & civil operations, and the need for constant monitoring of resources"
-      ],
-      "solutions": [
-        "In-house industrial 3D printers with rapid replacement and technical support",
-        "Expanded network coverage, affordable pricing with high quality, and a comprehensive Satellite IoT service featuring regional sensors and data processing algorithms",
-        "Cloud data availability with API for data processing and the launch of CIS Insurance company for risk reassurance"
-      ]
-    },
-    "services": {
-      "title": "Provided services",
-      "cards": [
-        {
-          "title": "Space3D",
-          "text": "We have the technical expertise to build large industrial printers...",
-          "url": "/space3d"
-        },
-        {
-          "title": "SpaceIoT",
-          "text": "Our technology allows you to transfer data from places where there is no cellular coverage...",
-          "url": "/spaceiot"
-        },
-        {
-          "title": "SpaceCUBS",
-          "text": "A community funded space constellation that uses blockchain technology to overwhelm the principles of decentralization...",
-          "url": "/spacecubs"
-        }
-      ]
-    },
-    "team": {
-      "title": "Our team",
-      "cards": [
-        {
-          "title": "Arman Bekembayev",
-          "text": "CEO"
-        },
-        {
-          "title": "Alexander Bychkov",
-          "text": "Team lead"
-        },
-        {
-          "title": "Dauren Aubakirov",
-          "text": "Business Development Director"
-        },
-        {
-          "title": "Sayat Akhmedzhanov",
-          "text": "Project Manager"
-        }
-      ]
-    },
-    "contact": {
-      "title": "Contact",
-      "address": "89 Turan avenue, Astana"
-    },
-    "space3dHero": {
-      "title": "3D printers",
-      "subtitle": "Made in Kazakhstan!",
-      "bullets": [
-        "3-months warranty",
-        "Training on printer operation",
-        "Delivery anywhere in Kazakhstan",
-        "1-year post-sale support"
-      ]
-    },
-    "productCharacteristics": {
-      "title": "Our Printers",
-      "workingArea": "Working area: ",
-      "nozzle": "Nozzle: ",
-      "printSpeed": "Print speed: up to 200 mm/s",
-      "travelSpeed": "Travel speed: up to 200 mm/s",
-      "printMedia": "Print media: PETG, PLA, and other materials up to 280°C",
-      "accuracy": "Accuracy up to 50 microns"
-    },
-    
-      "ratingSection": {
-        "heading": "Rate the quality of our work",
-        "slideAlt": "Slide"
+  "hero": {
+    "spaceStarts": "Space starts from Earth",
+    "spaceStartsDescription": "We produce 3D printers, IoVIT modems and satellites",
+    "cards": [
+      {
+        "text": "The production of large-sized and industrial 3D printers and printing for space, med and deep tech industries",
+        "buttonText": "more..."
       },
-      "applicationSection": {
-        "heading": "Application",
-        "education": "Education",
-        "medicine": "Medicine",
-        "industry": "Industry",
-        "aerospace": "Aerospace",
-        "toysManufacturing": "Toys Manufacturing",
-        "prototypeDevelopment": "Prototype Development"
+      {
+        "text": "Creation of IoT infrastructure and satellite data transmission independent of mobile network coverage",
+        "buttonText": "more..."
       },
-      "testimonialsSection": {
-        "testimonialsHeading": "Testimonials",
-        "companiesHeading": "Companies That Purchased From Us",
-        "testimonial1": "Dear representatives of the Space Lab organization, I would like to express my sincere gratitude for the production of a 3D printer for our order. We are fully satisfied with the quality and functionality of the received equipment. I especially want to mention your team of engineers, who always responded promptly to our questions and always remained open to discuss any ideas.",
-        "testimonialAuthor1": "American Corner & Makerspace Astana",
-        "testimonial2": "Amazing quality and excellent service",
-        "testimonialAuthor2": "Orthopedic, Shymkent"
-      },
-      "contactSection": {
-        "heading": "If you have any questions please fill out the form and we will contact you",
-        "address": "89, Turan avenue, Astana"
-      },
-      "heroSection": {
-        "title": "Satellite-Internet-of-Very-Important-Things (S-IoVIT)",
-        "subtitle": "Connecting Earth's Vital Data with Space"
-      },
-      "aboutSection": {
-        "heading": "About S-IoVIT",
-        "description": "Experience reliable data transfer for IoT applications from critical infrastructures worldwide. Our satellite-based system ensures efficient monitoring of climate, environment, and resources",
-        "bullets": [
-          "Strategic infrastructure that needs to be controlled each moment",
-          "For those whose business depends on data",
-          "Data transmission at any cost",
-          "Device that will survive even the most hardcore situations"
-        ]
-      },
-      "advantageSection": {
-        "heading": "Why Choose S-IoVIT?",
-        "items": [
-          "Collect data up to 10 km via LoRa, Wi-Fi, Ethernet",
-          "Secure blockchain node for data protection and verification",
-          "Global data transmission from and to any location"
-        ]
-      },
-      "roadmapSection": {
-        "title": "Roadmap",
-        "items": [
-          {
-            "title": "Letter of Intent with TransTelecom for 5000 devices",
-            "year": "Now",
-            "description": "TransTelecom has shown interest in acquiring 5000 S-IoVIT devices, marking a significant step towards realizing our mission"
-          },
-          {
-            "title": "Launching Sales in Central Asia",
-            "year": "2023",
-            "description": "We are excited to introduce S-IoVIT in Central Asia, providing reliable data transfer solutions to the region's critical infrastructures"
-          },
-          {
-            "title": "Expanding to Middle East, East Asia, and Lat Am",
-            "year": "2024",
-            "description": "Our expansion journey continues as we bring S-IoVIT to the Middle East, East Asia, and Latin America to serve more clients"
-          },
-          {
-            "title": "Launching IoT Satellite Constellation",
-            "year": "2025",
-            "description": "We are reaching for the stars by launching our IoT satellite constellation, ensuring global coverage for seamless data transmission"
-          }
-        ]
-      },
-      "partners": {
-        "title": "Our partners"
+      {
+        "text": "Space Commercial Unified Blockchain System provide anonymous messaging for blockchain and IoT applications",
+        "buttonText": "more..."
       }
-    
-    
-
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "text": "Startup company providing innovative solutions for industrial technologies, from additive installations to telecommunications",
+    "lists": [
+      {
+        "title": "Expertise",
+        "text": "By choosing us, you trust a wide range of specialists"
+      },
+      {
+        "title": "Customer focus",
+        "text": "You can contact us for any questions within 3 months"
+      },
+      {
+        "title": "Experience",
+        "text": "We have been successfully providing our services for more than 3 years"
+      }
+    ]
+  },
+  "problemsSection": {
+    "title": "Challenges",
+    "problems": [
+      "Production halted due to broken part and lack of technical support",
+      "Limited network coverage, high costs, and data unavailability across wide distances",
+      "Data unavailability across wide distances, lack of info for remote military & civil operations, and the need for constant monitoring of resources"
+    ],
+    "solutions": [
+      "In-house industrial 3D printers with rapid replacement and technical support",
+      "Expanded network coverage, affordable pricing with high quality, and a comprehensive Satellite IoT service featuring regional sensors and data processing algorithms",
+      "Cloud data availability with API for data processing and the launch of CIS Insurance company for risk reassurance"
+    ]
+  },
+  "services": {
+    "title": "Provided services",
+    "cards": [
+      {
+        "title": "Space3D",
+        "text": "We have the technical expertise to build large industrial printers...",
+        "url": "/space3d"
+      },
+      {
+        "title": "SpaceIoT",
+        "text": "Our technology allows you to transfer data from places where there is no cellular coverage...",
+        "url": "/spaceiot"
+      },
+      {
+        "title": "SpaceCUBS",
+        "text": "A community funded space constellation that uses blockchain technology to overwhelm the principles of decentralization...",
+        "url": "/spacecubs"
+      }
+    ],
+    "buttonText": "Submit application"
+  },
+  "team": {
+    "title": "Our team",
+    "cards": [
+      {
+        "title": "Arman Bekembayev",
+        "text": "CEO"
+      },
+      {
+        "title": "Alexander Bychkov",
+        "text": "Team lead"
+      },
+      {
+        "title": "Dauren Aubakirov",
+        "text": "Business Development Director"
+      },
+      {
+        "title": "Sayat Akhmedzhanov",
+        "text": "Project Manager"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "89 Turan avenue, Astana"
+  },
+  "space3dHero": {
+    "title": "3D printers",
+    "subtitle": "Made in Kazakhstan!",
+    "bullets": [
+      "3-months warranty",
+      "Training on printer operation",
+      "Delivery anywhere in Kazakhstan",
+      "1-year post-sale support"
+    ]
+  },
+  "productCharacteristics": {
+    "title": "Our Printers",
+    "workingArea": "Working area: ",
+    "nozzle": "Nozzle: ",
+    "printSpeed": "Print speed: up to 200 mm/s",
+    "travelSpeed": "Travel speed: up to 200 mm/s",
+    "printMedia": "Print media: PETG, PLA, and other materials up to 280°C",
+    "accuracy": "Accuracy up to 50 microns",
+    "btn": "Buy now"
+  },
+  "ratingSection": {
+    "heading": "Rate the quality of our work",
+    "slideAlt": "Slide"
+  },
+  "printing": {
+    "title": "3D Printing",
+    "modeling": {
+      "title": "3D Modeling",
+      "subtitle": "Reverse Engineering",
+      "description": "Ensure the process of developing design documentation based on the original data obtained as a finished product sample. Create a technical model with calculations in the shortest possible time. Providing a sample – Drawing development – Prototype"
+    },
+    "printingTypes": {
+      "title": "Printing Types",
+      "fdm": {
+        "subtitle": "FDM – sequential layering of layers of thermoplastic",
+        "list": [
+          "High-precision result",
+          "Low cost",
+          "Operational efficiency",
+          "Possibility of producing complex parts"
+        ]
+      },
+      "sla": {
+        "subtitle": "SLA - uses a photopolymer in liquid form",
+        "list": [
+          "High resolution",
+          "Good surface smoothness",
+          "Minimal waste",
+          "Strength"
+        ]
+      }
+    },
+    "approbation": {
+      "title": "Testing",
+      "description": "Conduct the process of testing to check and assess the effectiveness and practical applicability of the obtained product. All information obtained during testing will help us draw conclusions about the feasibility of further use of the new approach or product"
+    },
+    "btn": "Will materialize any of your fantasies"
+  },
+  "applicationSection": {
+    "heading": "Application",
+    "education": "Education",
+    "medicine": "Medicine",
+    "industry": "Industry",
+    "aerospace": "Aerospace",
+    "toysManufacturing": "Toys Manufacturing",
+    "prototypeDevelopment": "Prototype Development"
+  },
+  "testimonialsSection": {
+    "testimonialsHeading": "Testimonials",
+    "companiesHeading": "Companies That Purchased From Us",
+    "testimonial1": "Dear representatives of the Space Lab organization, I would like to express my sincere gratitude for the production of a 3D printer for our order. We are fully satisfied with the quality and functionality of the received equipment. I especially want to mention your team of engineers, who always responded promptly to our questions and always remained open to discuss any ideas.",
+    "testimonialAuthor1": "American Corner & Makerspace Astana",
+    "testimonial2": "Amazing quality and excellent service",
+    "testimonialAuthor2": "Orthopedic, Shymkent"
+  },
+  "contactSection": {
+    "heading": "If you have any questions please fill out the form and we will contact you",
+    "address": "89, Turan avenue, Astana"
+  },
+  "heroSection": {
+    "title": "Satellite-Internet-of-Very-Important-Things (S-IoVIT)",
+    "subtitle": "Connecting Earth's Vital Data with Space"
+  },
+  "aboutSection": {
+    "heading": "About S-IoVIT",
+    "description": "Experience reliable data transfer for IoT applications from critical infrastructures worldwide. Our satellite-based system ensures efficient monitoring of climate, environment, and resources",
+    "bullets": [
+      "Strategic infrastructure that needs to be controlled each moment",
+      "For those whose business depends on data",
+      "Data transmission at any cost",
+      "Device that will survive even the most hardcore situations"
+    ]
+  },
+  "advantageSection": {
+    "heading": "Why Choose S-IoVIT?",
+    "items": [
+      "Collect data up to 10 km via LoRa, Wi-Fi, Ethernet",
+      "Secure blockchain node for data protection and verification",
+      "Global data transmission from and to any location"
+    ]
+  },
+  "roadmapSection": {
+    "title": "Roadmap",
+    "items": [
+      {
+        "title": "Letter of Intent with TransTelecom for 5000 devices",
+        "year": "Now",
+        "description": "TransTelecom has shown interest in acquiring 5000 S-IoVIT devices, marking a significant step towards realizing our mission"
+      },
+      {
+        "title": "Launching Sales in Central Asia",
+        "year": "2023",
+        "description": "We are excited to introduce S-IoVIT in Central Asia, providing reliable data transfer solutions to the region's critical infrastructures"
+      },
+      {
+        "title": "Expanding to Middle East, East Asia, and Lat Am",
+        "year": "2024",
+        "description": "Our expansion journey continues as we bring S-IoVIT to the Middle East, East Asia, and Latin America to serve more clients"
+      },
+      {
+        "title": "Launching IoT Satellite Constellation",
+        "year": "2025",
+        "description": "We are reaching for the stars by launching our IoT satellite constellation, ensuring global coverage for seamless data transmission"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Our partners"
   }
-  
+}

@@ -11,90 +11,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="d-flex justify-content-center flex-wrap">
-          <div class="col-md-6 col-lg-4">
-            <div class="card d-flex dark-theme">
-              <div class="features">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="card-image">
-                      <img src="/src/assets/space3d.png" class="card-img-fluid" alt="Space3D">
-                    </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="card-title">
-                      <h3>Space3D</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="card-text">  
-                    <p>{{ $t('hero.cards.0.text') }}</p>
-                  </div>
-                  <router-link to="/space3d">
-                    <button class="btn btn-primary"><p>{{ $t('hero.cards.1.buttonText') }}</p></button>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card d-flex dark-theme">
-              <div class="features">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="card-image">
-                      <img src="/src/assets/spaceiot.png" class="card-img-fluid" alt="SpaceIoT">
-                    </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="card-title">
-                      <h3>SpaceIoT</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <p>{{ $t('hero.cards.1.text') }}</p>
-                  </div>
-                  <router-link to="/spaceiot">
-                    <button class="btn btn-primary"><p>{{ $t('hero.cards.1.buttonText') }}</p></button>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card d-flex dark-theme">
-              <div class="features">
-                <div class="row">
-                  <div class="col-lg-2">
-                    <div class="card-image">
-                      <img src="/src/assets/spacecubs.png" class="card-img-fluid" alt="SpaceCUBS">
-                    </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="card-title">
-                      <h3>SpaceCUBS</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <p>{{ $t('hero.cards.2.text') }}</p>
-                  </div>
-                  <router-link to="/spacecubs">
-                    <button class="btn btn-primary"><p>{{ $t('hero.cards.1.buttonText') }}</p></button>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
@@ -115,6 +31,7 @@ export default {
   text-align: center;
   background-color: var(--bg-color);
 }
+
 .card {
   background-color: var(--card-bg-color) !important;
   color: var(--text-color) !important;

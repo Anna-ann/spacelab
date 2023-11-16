@@ -33,8 +33,8 @@
 
         <div class="navbar-icons">
           <form class="d-flex">
-            <button class="btn btn-primary" type="submit">
-              <a href="#contact">{{ $t('navbar.contact') }}</a>
+            <button class="btn btn-primary" type="button" @click="scrollToContact">
+              {{ $t('navbar.contact') }}
             </button>
           </form>
           <div :class="['dropdown', { 'dropdown-dark': isDarkTheme }]">
@@ -70,6 +70,16 @@ export default {
     };
   },
   methods: {
+    scrollToContact() {
+      const contactElement = document.getElementById('contact');
+
+      if (contactElement) {
+        window.scrollTo({
+          top: contactElement.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    },
     changeLanguage(locale) {
       this.currentLocale = locale;
       this.$i18n.locale = locale;
